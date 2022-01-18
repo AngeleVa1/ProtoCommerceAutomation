@@ -12,9 +12,8 @@ public class testProtoCommerce extends BaseTest {
     public void protoCommerceHomePage() {
         ProtoCommerceHomePage protoCommerceHomePage = new ProtoCommerceHomePage(driver);
         protoCommerceHomePage.nameBox();
-      //  protoCommerceHomePage.successMessage();
-      //  Assert.assertEquals(protoCommerceHomePage.successMessage(), "Success! The Form has been submitted successfully!.", "Test not passed");
-      //  System.out.println(protoCommerceHomePage.successMessage());
-
+        protoCommerceHomePage.successMessage();
+        System.out.println(protoCommerceHomePage.successMessage());
+        Assert.assertEquals(protoCommerceHomePage.successMessage(), "Success!", "Test not passed");
     }
 }
